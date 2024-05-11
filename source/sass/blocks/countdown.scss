@@ -1,0 +1,149 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  padding-top: 44px;
+  padding-bottom: 90px;
+  transform: translate(0, -40%);
+  opacity: 0;
+  transition: all 0.4s $tf-default 0.8s;
+
+  @include vp-768 {
+    padding-top: 32px;
+    padding-bottom: 45px;
+  }
+}
+
+.countdown.anim-active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.countdown__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 75px;
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    right: 28px;
+    font-size: 72px;
+    font-weight: 600;
+    content: ':';
+
+    @include vp-1280 {
+      font-size: 64px;
+    }
+
+    @include vp-1024 {
+      top: 0;
+      font-size: 48px;
+    }
+
+    @include vp-768 {
+      font-size: 36px;
+    }
+
+    @include vp-360 {
+      // top: 0;
+      right: 20px;
+    }
+  }
+
+  @include vp-768 {
+    padding-right: 60px;
+  }
+
+  @include vp-360 {
+    padding-right: 44px;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+}
+
+.countdown__time {
+  margin-bottom: 42px;
+  font-size: 72px;
+  font-weight: 600;
+
+  @include vp-1280 {
+    font-size: 64px;
+  }
+
+  @include vp-1024 {
+    font-size: 48px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 22px;
+    font-size: 36px;
+  }
+
+  @include vp-360 {
+    margin-bottom: 20px;
+  }
+}
+
+.countdown__label {
+  position: relative;
+  font-size: 16px;
+  color: $color-default-white;
+
+  @include vp-768 {
+    font-size: 12px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -15px;
+    left: -50px;
+    width: 132px;
+    height: 54px;
+    background-image: url('../../img/svg/countdown-label.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    z-index: -1;
+    content: '';
+
+    @include vp-1024 {
+      left: -35px;
+      width: 120px;
+    }
+
+    @include vp-768 {
+      top: -12px;
+      left: -24px;
+      width: 64px;
+      height: 40px;
+      background-image: url('../../img/svg/countdown-label-tablet.svg');
+    }
+
+    @include vp-360 {
+      top: -10px;
+    }
+  }
+}
+
+.countdown__label--tablet {
+  display: none;
+}
+
+@include vp-768 {
+  .countdown__label--tablet {
+    display: block;
+  }
+
+  .countdown__label--desktop {
+    display: none;
+  }
+}

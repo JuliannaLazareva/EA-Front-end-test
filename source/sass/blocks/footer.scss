@@ -1,0 +1,138 @@
+.footer__wrapper {
+  padding-top: 62px;
+  padding-bottom: 70px;
+  background-color: $color-midnight;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
+  @include vp-768 {
+    padding-top: 59px;
+    padding-bottom: 60px;
+  }
+
+  @include vp-360 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer__form {
+  position: relative;
+  grid-column: 2/3;
+  margin: 0 auto;
+
+  input {
+    width: 440px;
+    padding: 20px 27px;
+    border: none;
+    border-radius: 40px;
+
+    @include vp-768 {
+      width: 359px;
+      padding: 11px 20px;
+    }
+
+    @include vp-360 {
+      width: 280px;
+    }
+
+    &::placeholder {
+      font-family: $ff-roboto;
+
+      @include vp-768 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 43px;
+    height: 43px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-alizarin;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-image: url('../../img/svg/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      content: '';
+    }
+
+    @include vp-768 {
+      top: 4px;
+      right: 4px;
+      width: 33px;
+      height: 33px;
+
+      &::after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+.footer__button {
+  position: relative;
+  margin-left: auto;
+  margin-right: 70px;
+  padding-right: 36px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: $color-default-white;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/svg/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    transform: rotate(90deg);
+    content: '';
+  }
+}
+
+.footer__events {
+  display: none;
+}
+
+.footer__events.is-active {
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  transition: height 0.4s $tf-default 0s;
+
+  @include vp-1024 {
+    padding-top: 24px;
+  }
+
+  h2 {
+    color: rgba(22, 44, 78, 0.2);
+    font-size: 72px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include vp-1024 {
+      font-size: 36px;
+    }
+  }
+}

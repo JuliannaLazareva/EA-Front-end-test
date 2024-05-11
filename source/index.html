@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/poppins-regular-webfont.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-semibold-webfont.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-bold-webfont.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Roboto-Regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/SFProDisplay-Regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/SFProDisplay-Medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/SFProDisplay-Semibold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header anim-items anim-no-hide">
+        <div class="header__logo anim-items">
+          <a href="index.html" class="header__link">
+            <img
+              src="img/svg/logo.svg"
+              width="190"
+              height="60"
+              alt="Lead Advisors"
+            />
+          </a>
+        </div>
+      </header>
+      <main>
+        <section class="main">
+          <div class="container">
+            <h1 class="main__title anim-items">Under Construction</h1>
+            <p class="main__text anim-items">
+              We're making lots of improvements and will be back soon
+            </p>
+            <div class="main__countdown countdown anim-items">
+              <div class="countdown__item">
+                <span class="countdown__time" id="days">00</span>
+                <span class="countdown__label countdown__label--desktop"
+                  >Days</span
+                >
+                <span class="countdown__label countdown__label--tablet"
+                  >DD</span
+                >
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__time" id="hours">00</span>
+                <span class="countdown__label countdown__label--desktop"
+                  >Hours</span
+                >
+                <span class="countdown__label countdown__label--tablet"
+                  >HH</span
+                >
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__time" id="minutes">00</span>
+                <span class="countdown__label countdown__label--desktop"
+                  >Minutes</span
+                >
+                <span class="countdown__label countdown__label--tablet"
+                  >MM</span
+                >
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__time" id="seconds">00</span>
+                <span class="countdown__label countdown__label--desktop"
+                  >Seconds</span
+                >
+                <span class="countdown__label countdown__label--tablet"
+                  >SS</span
+                >
+              </div>
+            </div>
+            <p class="main__text main__text--event anim-items">
+              Check our event page when you wait:
+            </p>
+            <a
+              class="main__button btn anim-items"
+              href="https://www.egorovagency.by"
+              >Go to the event</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="container">
+            <form class="footer__form" method="post" action="#">
+              <label for="email" class="visually-hidden">Ваше имя:</label>
+              <input
+                id="email"
+                type="email"
+                name="user-email"
+                placeholder="Enter your Email and get notified"
+                pattern="^(?=.*[a-zA-Z])(?=.*\d).+$"
+                required
+              />
+              <button type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
+            </form>
+            <button class="footer__button" type="button">Other Events</button>
+          </div>
+        </div>
+        <div class="footer__events">
+          <div class="container">
+            <h2>All events</h2>
+            <ul class="accordion">
+              <li id="hawaiian">
+                <a href="#hawaiian"><span>01</span>Hawaiian party</a>
+                <div class="accordion__info">
+                  <h3>Hawaiian party</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <!-- <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />-->
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <!--<img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture> -->
+                </div>
+              </li>
+              <li id="mafia">
+                <a href="#mafia"><span>02</span>Mafia party</a>
+                <div class="accordion__info">
+                  <h3>Mafia party</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="party">
+                <a href="#party"><span>03</span>Party</a>
+                <div class="accordion__info">
+                  <h3>Party</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="beach">
+                <a href="#beach"><span>04</span>Party on the beach</a>
+                <div class="accordion__info">
+                  <h3>Party on the beach</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="home">
+                <a href="#home"><span>05</span>Home Security</a>
+                <div class="accordion__info">
+                  <h3>Home Security</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="network">
+                <a href="#network"><span>06</span>Network Design & Implementation</a>
+                <div class="accordion__info">
+                  <h3>Network Design & Implementation</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="design">
+                <a href="#design"><span>07</span>System Design & Engineering</a>
+                <div class="accordion__info">
+                  <h3>System Design & Engineering</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li id="client">
+                <a href="#client"><span>08</span>Client Care Plans</a>
+                <div class="accordion__info">
+                  <h3>Client Care Plans</h3>
+                  <p>13.02.2023</p>
+                  <a href="#" class="accordion__button-more">More information</a>
+                </div>
+                <div class="accordion__picture">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/Hawaiian_party.webp    1x,
+                        img/Hawaiian_party@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 995px; 2x: 1990px -->
+                    <img
+                      src="./img/Hawaiian_party.jpg"
+                      srcset="img/Hawaiian_party@2x.jpg"
+                      alt="Hawaiian_party"
+                      width="995"
+                      height="681"
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Сообщение об ошибке отправки формы -->
+    <template id="error">
+      <section class="error popup">
+        <div class="error__inner">
+          <h2 class="error__title">Error!</h2>
+          <p class="error__text">Error sending data. Try again</p>
+          <button
+            class="popup__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button type="button" class="error__button btn">Close</button>
+        </div>
+      </section>
+    </template>
+
+    <!-- Сообщение об успешной отправке формы -->
+    <template id="success">
+      <section class="success popup">
+        <div class="success__inner">
+          <h2 class="success__title">Success!</h2>
+          <p class="success__text">
+            You have successfully subscribed to the email newsletter
+          </p>
+          <button
+            class="popup__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button type="button" class="success__button btn">Close</button>
+        </div>
+      </section>
+    </template>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

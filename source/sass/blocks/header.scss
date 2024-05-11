@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  padding-bottom: 60px;
+
+  &::before {
+    position: absolute;
+    top: -279px;
+    left: -390px;
+    width: 865px;
+    height: 714px;
+    background-image: url('../../img/svg/Vector-left.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    content: '';
+    transform: translate(0, -40%);
+    opacity: 0;
+    transition: all 0.4s $tf-default 1.6s;
+
+    @include vp-1280 {
+      top: -387px;
+      left: -455px;
+    }
+
+    @include vp-768 {
+      top: -175px;
+      left: -225px;
+      background-size: 55%;
+    }
+
+    @include vp-540 {
+      top: -215px;
+      left: -235px;
+    }
+
+    @include vp-360 {
+      top: -147px;
+      left: -182px;
+      background-size: 42%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: -671px;
+    right: -541px;
+    width: 865px;
+    height: 1050px;
+    background-image: url('../../img/svg/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 98%;
+    transform: rotate(7deg);
+    content: '';
+    transform: translate(0, -40%);
+    opacity: 0;
+    transition: all 0.4s $tf-default 1.6s;
+
+    @include vp-768 {
+      top: -689px;
+      right: -531px;
+      transform: rotate(0);
+    }
+
+    @include vp-540 {
+      background-size: 40%;
+      top: -265px;
+      right: -205px;
+    }
+
+    @include vp-360 {
+      top: -380px;
+      right: -302px;
+      background-size: 55%;
+    }
+  }
+
+
+
+  @include vp-768 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-360 {
+    padding-bottom: 35px;
+  }
+}
+
+.header.anim-active {
+  &::before,
+  &::after {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  transform: translate(0, -40%);
+  opacity: 0;
+  transition: all 0.4s $tf-default 0s;
+
+  img {
+    width: 190px;
+    height: 60px;
+
+    @include vp-360 {
+      width: 128px;
+      height: 40px;
+    }
+  }
+
+  @include vp-768 {
+    padding-top: 100px;
+  }
+
+  @include vp-360 {
+    padding-top: 80px;
+  }
+}
+
+.header__logo.anim-active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
