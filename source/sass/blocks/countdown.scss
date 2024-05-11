@@ -108,7 +108,7 @@
     left: -50px;
     width: 132px;
     height: 54px;
-    background-image: url('../../img/svg/countdown-label.svg');
+    background-image: url('../img/svg/countdown-label.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -125,7 +125,7 @@
       left: -24px;
       width: 64px;
       height: 40px;
-      background-image: url('../../img/svg/countdown-label-tablet.svg');
+      background-image: url('../img/svg/countdown-label-tablet.svg');
     }
 
     @include vp-360 {

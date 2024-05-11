@@ -319,49 +319,49 @@ template {
   font-weight: 400;
   font-family: "Poppins";
   font-display: swap;
-  src: url("../../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../../fonts/poppins-regular-webfont.woff") format("woff");
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 600;
   font-family: "Poppins";
   font-display: swap;
-  src: url("../../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../../fonts/poppins-semibold-webfont.woff") format("woff");
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 900;
   font-family: "Poppins";
   font-display: swap;
-  src: url("../../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../../fonts/poppins-bold-webfont.woff") format("woff");
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "SFProDisplay";
   font-display: swap;
-  src: url("../../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../../fonts/SFProDisplay-Regular.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "SFProDisplay";
   font-display: swap;
-  src: url("../../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../../fonts/SFProDisplay-Medium.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "SFProDisplay";
   font-display: swap;
-  src: url("../../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../../fonts/SFProDisplay-Semibold.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
 }
 *,
 *::before,
@@ -618,7 +618,7 @@ button,
   left: -390px;
   width: 865px;
   height: 714px;
-  background-image: url("../../img/svg/Vector-left.svg");
+  background-image: url("../img/svg/Vector-left.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100%;
@@ -662,7 +662,7 @@ button,
   right: -541px;
   width: 865px;
   height: 1050px;
-  background-image: url("../../img/svg/Vector.svg");
+  background-image: url("../img/svg/Vector.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 98%;
@@ -890,7 +890,7 @@ button,
   right: 20px;
   width: 20px;
   height: 20px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1050,7 +1050,7 @@ button,
   left: -50px;
   width: 132px;
   height: 54px;
-  background-image: url("../../img/svg/countdown-label.svg");
+  background-image: url("../img/svg/countdown-label.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -1069,7 +1069,7 @@ button,
     left: -24px;
     width: 64px;
     height: 40px;
-    background-image: url("../../img/svg/countdown-label-tablet.svg");
+    background-image: url("../img/svg/countdown-label-tablet.svg");
   }
 }
 @media (max-width: 360px) {
@@ -1187,7 +1187,7 @@ button,
   right: 10px;
   width: 20px;
   height: 20px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1222,7 +1222,7 @@ button,
   right: 0;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1453,7 +1453,7 @@ button,
   position: absolute;
   width: 996px;
   height: 682px;
-  background-image: url("../../img/Hawaiian_party.jpg");
+  background-image: url("../img/Hawaiian_party.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1512,7 +1512,7 @@ button,
   right: 0;
   width: 985px;
   height: 682px;
-  background-image: url("../../img/Hawaiian_party.jpg");
+  background-image: url("../img/Hawaiian_party.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
